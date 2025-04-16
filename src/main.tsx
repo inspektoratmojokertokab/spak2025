@@ -19,6 +19,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="/404" element={<Page404 />} />
           <Route path="/:opd" element={<App />} />
           <Route path="/appreciation" element={<Appreciation />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>

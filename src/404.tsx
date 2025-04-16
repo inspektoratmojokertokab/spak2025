@@ -10,7 +10,7 @@ function Page404() {
       <p className="mb-5">Kuesioner survei yang tersedia:</p>
       <div className="flex flex-wrap gap-2 justify-center">
         {opd_acronym.map((opd) => (
-          <Link to={opd} key={opd}>
+          <Link to={`/${opd}`} key={opd}>
             <Button size="sm" variant="outline">
               {opd}
             </Button>

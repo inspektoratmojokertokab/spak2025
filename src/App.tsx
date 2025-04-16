@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { useParams, useNavigate } from "react-router";
 import { useMutation } from "@tanstack/react-query";
 import { Input } from "./components/ui/input";
@@ -14,9 +14,11 @@ function App() {
   const { opd } = useParams();
   const navigate = useNavigate();
 
-  if (!opd_acronym.includes(opd as string)) {
-    navigate("/Page404");
-  }
+  useEffect(() => {
+    if (!opd_acronym.includes(opd as string)) {
+      navigate("/404");
+    }
+  });
 
   const mutation = useMutation({
     mutationFn: async () => {
