@@ -220,7 +220,7 @@ function App() {
                   Apakah menurut penilaian Bapak/Ibu/Saudara terdapat
                   <strong> diskriminasi </strong> pada unit layanan ini?
                 </p>
-                <RadioGroup id="q1" name="diskriminasi">
+                <RadioGroup id="q1" name="diskriminasi" required>
                   <div className="flex items-center space-x-2 p-2 rounded-lg bg-red-500">
                     <RadioGroupItem value="0" id="q12" className="bg-white" />
                     <Label
@@ -245,7 +245,7 @@ function App() {
                   yang memberikan pelayanan diluar prosedur sehingga
                   mengindikasikan <strong> kecurangan </strong>?
                 </p>
-                <RadioGroup id="q1" name="kecurangan">
+                <RadioGroup id="q1" name="kecurangan" required>
                   <div className="flex items-center space-x-2 p-2 rounded-lg bg-red-500">
                     <RadioGroupItem value="0" id="q22" className="bg-white" />
                     <Label htmlFor="q22" className="p-1 text-white w-full">
@@ -267,7 +267,7 @@ function App() {
                   pemberian imbalan uang/barang <strong> (gratifikasi) </strong>{" "}
                   pada unit layanan ini?
                 </p>
-                <RadioGroup id="q1" name="gratifikasi">
+                <RadioGroup id="q1" name="gratifikasi" required>
                   <div className="flex items-center space-x-2 p-2 rounded-lg bg-red-500">
                     <RadioGroupItem value="0" id="q32" className="bg-white" />
                     <Label htmlFor="q32" className="p-1 text-white w-full">
@@ -289,7 +289,7 @@ function App() {
                   pungutan liar <strong> (pungli) </strong> pada unit layanan
                   ini?
                 </p>
-                <RadioGroup id="q1" name="pungli">
+                <RadioGroup id="q1" name="pungli" required>
                   <div className="flex items-center space-x-2 p-2 rounded-lg bg-red-500">
                     <RadioGroupItem value="0" id="q42" className="bg-white" />
                     <Label htmlFor="q42" className="p-1 text-white w-full">
@@ -310,7 +310,7 @@ function App() {
                   <strong> pencaloan/makelar/perantara/biro jasa </strong> pada
                   unit layanan ini?
                 </p>
-                <RadioGroup id="q1" name="pencaloan">
+                <RadioGroup id="q1" name="pencaloan" required>
                   <div className="flex items-center space-x-2 p-2 rounded-lg bg-red-500">
                     <RadioGroupItem value="0" id="q52" className="bg-white" />
                     <Label htmlFor="q52" className="p-1 text-white w-full">
