@@ -7,6 +7,7 @@ import App from "./App.tsx";
 import Home from "./Home.tsx";
 import Appreciation from "./Appreciation.tsx";
 import Page404 from "./404.tsx";
+import Result from "./Result.tsx";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")!).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/capaian" element={<Result />} />
           <Route path="/404" element={<Page404 />} />
           <Route path="/:opd" element={<App />} />
           <Route path="/appreciation" element={<Appreciation />} />
