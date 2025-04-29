@@ -37,7 +37,7 @@ function Result() {
   }, [data]);
 
   return (
-    <div className="flex flex-col justify-center items-center max-w-3xl mx-auto p-10 text-center">
+    <div className="flex flex-col justify-center items-center max-w-3xl mx-auto p-2 lg:p-10 text-center">
       <h1 className="text-3xl font-bold">Capaian SPAK 2025</h1>
       <p className="text-lg mb-8">Pemerintah Kabupaten Mojokerto</p>
       {isLoading && <p className="text-center">Memuat data ...</p>}
@@ -63,7 +63,10 @@ function Result() {
           </TableHeader>
           <TableBody>
             {dataCapaian.map((capaian) => (
-              <TableRow key={capaian.opd} className="hover:bg-slate-500 hover:text-white">
+              <TableRow
+                key={capaian.opd}
+                className="hover:bg-slate-500 hover:text-white"
+              >
                 <TableCell className="text-left whitespace-normal px-5 py-2">
                   {capaian.opd}
                 </TableCell>
