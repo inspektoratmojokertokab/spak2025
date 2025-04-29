@@ -55,7 +55,7 @@ function Result() {
             type="search"
             className="px-4 py-2 border-1 border-gray-300 rounded-sm w-full mb-5"
             placeholder="Cari Perangkat Daerah/Unit Kerja"
-            onKeyDown={(e) => {
+            onChange={(e) => {
               const value = (e.target as HTMLInputElement).value.toLowerCase();
               setDataCapaian(
                 data?.filter((row: IDataCapaian) =>
