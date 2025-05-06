@@ -73,6 +73,7 @@ export const opd: Record<string, string> = {
   pkmtrowulan: "PUSKESMAS TROWULAN",
   pkmtawangsari: "PUSKESMAS TAWANGSARI",
   pkmsooko: "PUSKESMAS SOOKO",
+  pkmpungging: "PUSKESMAS PUNGGING",
 };
 
 export const opd_acronym = Object.keys(opd);
